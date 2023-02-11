@@ -12,8 +12,10 @@ public class sum {
                 oddSum+=numbers.get(i);
             }
         }
-        ArrayList<Integer> sums = {evenSum,oddSum};
+        ArrayList<Integer> sums = new ArrayList<>();
+        sums.add(evenSum);
+        sums.add(oddSum);
         return sums;
     }
-}        
-    
+}       
+      
