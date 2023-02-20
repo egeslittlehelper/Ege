@@ -1,9 +1,9 @@
-package GitHubBois;
+
 
 /**
  * SecondQuesiton
  */
-public class SecondQuesiton {
+public class MaxMinArray {
 
     public static void ArrayMaxMin (int[] nums){
         int min = nums[0];

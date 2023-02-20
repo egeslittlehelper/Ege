@@ -25,12 +25,12 @@ public class Menu {
     choice = sc.nextInt();
     sc.nextLine();
 
-      
+      //min and max of arrays
     if(choice ==1){
-      
+      MaxMinArray.ArrayMaxMin(arr);
 
     }
-
+    //average
     if(choice ==2){
       int sum =0;
 
@@ -52,9 +52,15 @@ public class Menu {
           System.out.println();
        
     }
-
+    //sums of even and odds
     if(choice ==3){
-      
+      ArrayList<Integer> sums = new ArrayList<Integer>();
+      for(int b = 0; b < arr.length; b++){
+         sums.add(arr[b]);
+      }
+      sums = sum.sumOf(sums);
+      System.out.print("Sum of the evens : " + sums.get(0));
+      System.out.print("Sum of the odds : " + sums.get(1));
     }
    }
    while(choice != 4);
