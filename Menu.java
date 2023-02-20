@@ -18,7 +18,7 @@ public class Menu {
     do{
     System.out.println(" -------------- Menu: "+ "-------------------");
     System.out.println();
-    String sform = String.format("%s%n%s%n%s%n%s%n", "1 - Find the minimum and the maximum" ,"2 - Find the average", "3 - Find the sum of elements with odd and even numbered", "4 - Exit");
+    String sform = String.format("%s%n%s%n%s%n%s%n%s%n", "1 - Find the minimum and the maximum" ,"2 - Find the average", "3 - Find the sum of elements with odd and even numbered", "4 - Display the Array","5 - Exit");
     System.out.println(sform);
     System.out.println("-------------------------------------------");
     System.out.print("Your choice: ");
@@ -62,8 +62,11 @@ public class Menu {
       System.out.print("Sum of the evens : " + sums.get(0));
       System.out.print("Sum of the odds : " + sums.get(1));
     }
+    if(choice == 4) {
+      System.out.println(Arrays.toString(arr));
+    }
    }
-   while(choice != 4);
+   while(choice != 5);
 
 }
 
